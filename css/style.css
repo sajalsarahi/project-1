@@ -1,1 +1,744 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F7F2EC;
+    color: #3A2A26;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    background-color: #6E2C3A;
+    color: #FFF8F2;
+}
+
+.header-content {
+    max-width: 1440px;
+    height: 100px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.desktop-nav a {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.desktop-nav a:hover {
+    text-decoration: underline;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.container {
+    width: calc(100% - 160px);
+    max-width: 1280px;
+    margin: 50px auto 100px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.intro {
+    background-color: #C7A6A1;
+    min-height: 350px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.intro-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    color: #6E2C3A;
+}
+
+.intro-top .star {
+    color: #F7F2EC;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+}
+
+.intro h1 {
+    color: #6E2C3A;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 660px;
+}
+
+.button {
+    background-color: #6E2C3A;
+    color: #FFF8F2;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button:hover {
+    background-color: #5A1F2B;
+}
+
+.about {
+    background-color: #E6D8CF;
+    min-height: 350px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.about h2 {
+    color: #6E2C3A;
+    font-size: 25px;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 320px;
+}
+
+.interest-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.interest-boxes span {
+    border: 1px solid #6E2C3A;
+    border-radius: 20px;
+    color: #6E2C3A;
+    padding: 6px 10px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background-color: #D8C7B8;
+    height: 420px;
+    padding: 20px 25px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+}
+
+.card-two {
+    background-color: #A9B0A0;
+}
+
+.card-three {
+    background-color: #B68A89;
+}
+
+.project-image {
+    width: 100%;
+    height: 280px;
+    background-color: #FFF8F2;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.project-info {
+    width: 100%;
+    flex: 1;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-info h2 {
+    font-size: 19px;
+}
+
+.project-info p {
+    font-size: 15px;
+}
+
+.project-button {
+    margin-top: auto;
+    padding: 8px 18px;
+    font-size: 13px;
+}
+
+footer {
+    background-color: #6E2C3A;
+    color: #FFF8F2;
+}
+
+.footer-content {
+    max-width: 1440px;
+    min-height: 100px;
+    padding: 20px 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-name h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 23px;
+}
+
+.footer-name p {
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.detail-title {
+    background-color: #E6D8CF;
+    min-height: 160px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back-link {
+    color: #6E2C3A;
+    font-size: 13px;
+}
+
+.detail-title h1 {
+    font-size: 46px;
+    color: #6E2C3A;
+    line-height: 1.2;
+}
+
+.detail-title p {
+    font-size: 16px;
+}
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.project-story {
+    background-color: #C7A6A1;
+    min-height: 650px;
+    min-width: 0;
+    padding: 35px 30px;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.poster {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+}
+
+.story-text {
+    min-width: 0;
+    border-left: 2px solid #6E2C3A;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.story-text section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.story-text h2 {
+    font-size: 28px;
+    color: #6E2C3A;
+}
+
+.story-text h3 {
+    font-size: 21px;
+}
+
+.story-text p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.creative-sidebar {
+    background-color: #D8C7B8;
+    min-height: 650px;
+    min-width: 0;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.sidebar-heading h2 {
+    color: #6E2C3A;
+    font-size: 24px;
+}
+
+.sidebar-heading p {
+    font-size: 14px;
+}
+
+.canva-section,
+.inspiration-section,
+.palette-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.canva-box {
+    width: 125px;
+    height: 95px;
+    background-color: #FFF8F2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6E2C3A;
+    font-family: 'Caveat', cursive;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.canva-section p,
+.inspiration-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.inspiration-section h3,
+.palette-section h3 {
+    font-size: 18px;
+}
+
+.decoration,
+.bottom-decoration {
+    color: #6E2C3A;
+    font-size: 23px;
+}
+
+.colour-circles {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.colour {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #AD9E91;
+}
+
+.beige {
+    background-color: #BFB29E;
+}
+
+.dark {
+    background-color: #0F0603;
+}
+
+.cream {
+    background-color: #F4EDE2;
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+    .container {
+        width: calc(100% - 60px);
+    }
+
+    .projects {
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .detail-layout {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .project-story {
+        grid-template-columns: 1fr;
+    }
+
+    .story-text {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        height: 100px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+        z-index: 5;
+    }
+
+    .mobile-menu summary {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .mobile-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mobile-menu summary span {
+        width: 23px;
+        height: 3px;
+        background-color: #FFF8F2;
+        border-radius: 3px;
+    }
+
+    .mobile-menu nav {
+        position: absolute;
+        top: 42px;
+        right: 0;
+        width: 170px;
+        background-color: #6E2C3A;
+        border: 1px solid #C7A6A1;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu nav a {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+        margin: 30px auto 60px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .intro {
+        min-height: 250px;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .intro-top {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .intro-top .star {
+        font-size: 13px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .button {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .about {
+        min-height: 180px;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .interest-boxes span {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        min-height: 250px;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .project-image img {
+        padding: 5px;
+    }
+
+    .project-info {
+        padding-top: 7px;
+    }
+
+    .project-info h2 {
+        font-size: 17px;
+    }
+
+    .project-info p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .project-button {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+
+    .footer-content {
+        min-height: 100px;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .footer-name h2 {
+        font-size: 20px;
+    }
+
+    .footer-name p {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        gap: 20px;
+        font-size: 13px;
+    }
+
+    .detail-title {
+        min-height: 180px;
+        padding: 20px 15px;
+    }
+
+    .detail-title h1 {
+        font-size: 32px;
+    }
+
+    .detail-title p {
+        font-size: 14px;
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .project-story {
+        min-height: 0;
+        padding: 20px 15px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .poster img {
+        width: min(100%, 280px);
+        max-height: none;
+    }
+
+    .story-text {
+        border-left: none;
+        padding-left: 0;
+        gap: 25px;
+    }
+
+    .story-text h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .story-text h3 {
+        font-size: 19px;
+    }
+
+    .story-text p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .creative-sidebar {
+        min-height: 390px;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .sidebar-heading h2 {
+        font-size: 22px;
+    }
+
+    .canva-box {
+        width: 100px;
+        height: 75px;
+        font-size: 38px;
+    }
+
+    .canva-section p,
+    .inspiration-section p {
+        font-size: 13px;
+    }
+
+    .colour {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .intro-top {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .intro h1 {
+        font-size: 27px;
+    }
+}
