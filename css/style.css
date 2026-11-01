@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #F7F2EC;
     color: #3A2A26;
@@ -67,10 +63,6 @@ img {
     padding: 8px;
     list-style: none;
     cursor: pointer;
-}
-
-.mobile-menu summary::-webkit-details-marker {
-    display: none;
 }
 
 .mobile-menu summary span {
